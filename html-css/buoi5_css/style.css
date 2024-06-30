@@ -1,0 +1,63 @@
+/* chọn theo tag name */
+p {
+    color: green;
+}
+/* chọn theo class name*/
+.good {
+    color: brown;
+}
+/* chọn theo id name */
+#blue {
+    color: rgb(15, 99, 99);
+}
+
+/* chọn theo cha con */
+ul li {
+    color: hsl(193, 100%, 50%);
+}
+
+/* chọn theo cha con trực tiếp */
+ul > li {
+    color: blue;
+}
+/* Độ ưu tiên Id > class name > tag name */
+.bold {
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_alter{
+    box-sizing: border-box;
+    background: #ccc;
+    width: calc(50% - 40px);
+    height: 200px;
+    color: #fff;
+    padding: 20px;
+    border: 2px dashed brown;
+
+    margin: 20px;
+}
+.box1{
+    box-sizing: border-box;
+    background: #ccc;
+    width: calc(50% - 40px);
+    height: 200px;
+    color: #fff;
+    padding: 20px;
+    border: 2px dashed brown;
+
+    margin: 20px;
+}
+.box2{
+    box-sizing: border-box;
+    background: #ccc;
+    width: calc(50% - 40px);
+    height: 200px;
+    color: #fff;
+    padding: 20px;
+    border: 2px dashed violet;
+
+    margin: 20px;
+}

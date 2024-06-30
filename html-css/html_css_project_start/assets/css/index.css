@@ -1,0 +1,443 @@
+/* 1. reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* config mầu sắc vào trong biến */
+:root {
+    --color-white: #fff;
+    --color-blue-lighter: #f4f9fc;
+    --color-grey: #ddd;
+    --color-red: #ff324d;
+    --color-black: #212529;
+    --color-yellow: #f6bc3e;
+    --color-green: #388e3c;
+    --color-grey-lighter: #687188;
+}
+
+/* 2. config mặc định css dựa trên tính chất inherit */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--color-black);
+}
+
+/* Các bước style */
+/* 1. layout (định vị mã các phần tử đúng vị trí trên web)
+2. style chi tiết từng phần
+3. style phần lớn trước (box model)
+4. style chi tiết text (style to text) */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px dashed red;
+    padding: 0 10px;
+}
+/* ======== style header ========= */
+.pages-link li a.active {
+    color: var(--color-red);
+}
+header {
+    padding: 13px 0;
+    background: var(--color-white);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-right {
+    align-items: center;
+    display: flex;
+}
+.menu-right .pages-link {
+    display: flex;
+}
+.menu-right .search {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: -10px;
+}
+
+/* style chi tiết logo */
+.logo a {
+    display: block;
+    width: 182px;
+}
+.logo a img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+/* style chi tiết phần menu bên phải */
+.pages-link li a {
+    display: inline-block;
+    padding: 10px;
+    color: var(--color-black);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.pages-link li a:hover {
+    color: var(--color-red);
+}
+.search li i {
+    display: inline-block;
+    padding: 10px;
+}
+.search li i:hover{
+    cursor: pointer;
+    color: var(--color-red);
+}
+/* ======== style header ========= */
+
+/* style banner */
+.banner-full {
+    background: var(--color-blue-lighter);
+}
+.banner {
+    display: flex;
+    align-items: center;
+}
+.banner .image {
+    width: 40%;
+}
+.banner .content {
+    width: 60%;
+    margin-left: 100px;
+}
+.banner .image img {
+    vertical-align: middle;
+}
+.banner .content span {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--color-red);
+}
+.banner .content h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.banner .content h5 {
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 34px;
+}
+.btn-warning {
+    background: var(--color-red);
+    color: var(--color-white);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--color-red);
+}
+.banner .content a:hover {
+    background: transparent;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+}
+/* style banner */
+
+/* style product */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+}
+.product-list .product-item {
+    width: calc(25% - 24px);
+    margin-left: 24px;
+    box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.1);
+    margin-bottom: 27px;
+}
+.product-list .product-item img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.product-full h2 {
+    margin: 50px 0;
+    font-size: 32px;
+    text-align: center;
+}
+.product-list .product-info {
+    padding: 17px;
+}
+.product-list .product-info h5 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.product-list .product-info h5:hover {
+    cursor: pointer;
+    color: var(--color-red);
+}
+.product-info .price-info span {
+    display: inline-block;
+    margin-left: 3px;
+}
+.product-info .price-info span:first-child {
+    color: var(--color-red);
+    font-size: 15px;
+    font-weight: 500;
+}
+.product-info .price-info span:nth-child(2) {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.product-info .price-info span:last-child {
+    font-size: 14px;
+    color: var(--color-green);
+}
+.product-info .product-star {
+    margin-top: 8px;
+}
+.product-info .product-star i {
+    color: var(--color-yellow);
+    font-size: 14px;
+}
+.product-list .product-item .image {
+    position: relative;
+}
+.product-list .product-item .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.product-list .product-item:hover .image::before {
+    opacity: 1;
+}
+/* style product */
+
+/* style service */
+.service-full {
+    margin: 50px 0;
+}
+.services {
+    display: flex;
+}
+.services .service-item {
+    width: 33.3333%;
+    padding: 0 40px;
+    text-align: center;
+    position: relative;
+}
+.services .service-item::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background: #ccc;
+    top: 15%;
+    bottom: 15%;
+}
+.services .service-item:last-child::before {
+    content: normal;
+}
+.services .service-item .image span {
+    font-size: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.services .service-item h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+/* style service */
+
+/* style subcrible */
+.subcrible {
+    display: flex;
+    align-items: center;
+}
+.subcrible .subcrible-title {
+    width: 50%;
+}
+.subcrible form {
+    width: 50%;
+    position: relative;
+}
+.subcrible form input {
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 18px 16px;
+    font-size: 16px;
+}
+.subcrible form button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 18px 38px 15px;
+    display: inline-block;
+    background: var(--color-black);
+    color: var(--color-white);
+    margin-top: -1px;
+    font-size: 16px;
+}
+.subcrible form button:hover {
+    cursor: pointer;
+}
+.subcrible-full {
+    background: var(--color-red);
+    padding: 50px 0;
+}
+.subcrible-full h3 {
+    color: var(--color-white);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.subcrible form input:focus {
+    outline: none;
+}
+/* style subcrible */
+.footer-top-full {
+    display: flex;
+    background: var(--color-black);
+    color: var(--color-white);
+    padding: 100px 0;
+}
+.row-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-network ul {
+    display: flex;
+}
+.footer-logo a  img {
+    vertical-align: middle;
+}
+.social-network {
+    width: 25%;
+}
+.social-network, .Contact-Info {
+    width: 25%;
+}
+.Useful-Links, .Category, .My-Account  {
+    width: 16.6666%;
+}
+.social-network a {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+.social-network p {
+    line-height: 1.8;
+    margin-bottom: 24px;
+}  
+.social-network .icons i {
+    display: inline-block;
+    padding: 8px;
+} 
+.Useful-Links ul li, .Category ul li, .My-Account ul li, .Contact-Info ul li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.Useful-Links h6, .Category h6, .My-Account h6, .Contact-Info h6{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.footer-top-full a {
+    color: var(--color-white);
+}
+/* style footer top */
+
+/* banner: (width) 
+    >= 768px (chia 2 cột)
+    <768px 100% (1 cột)
+ */
+
+ /* product: (width)
+    >= 992px (chia 4 cột)
+    >= 768px (chia 3 cột)
+    <768px (chia 2 cột)
+    <480px (width 100%) */
+
+/* service: (width) 
+   >= 992px (chia 3 cột)
+    < 992px (100%) */
+
+/* subcrible: (width)
+    >= 768px (chia 2 cột)
+    <768px (width 100%) */
+
+/* footer: (width)
+    >=992px (chia 5 cột)
+    >=768px (chia 3 cột)
+    >=576px (chia 2 cột + 1 cột) 
+    <576px (width 100%) */
+
+/* responsive css */
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    .container .row > * {
+        width: 100%;
+    }
+    .menu-right .pages-link {
+        display: none;
+    }
+    /* banner */
+    .banner .content {
+        margin-left: 0px;
+        text-align: center;
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .banner .image {
+        order: 2;
+    }
+    .banner .content h2 {
+        font-size: 22px;
+    }
+    /* subcrible */
+    .subcrible-full h3 {
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+    .subcrible-full {
+        padding: 15px 0px;
+    }
+    .useful-links h6 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .product-full h2 {
+        margin: 20px 0;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+
+/* responsive css */

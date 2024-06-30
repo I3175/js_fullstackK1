@@ -1,0 +1,12 @@
+.container {
+    border: 1px dashed brown;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    padding: 10px 16px;
+    background: brown;
+}

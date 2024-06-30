@@ -1,0 +1,46 @@
+.container {
+    width: 500px;
+    border: 2px dashed brown;
+
+    /* thuộc tính biển div thành flex container */
+    display: flex;
+
+    /* căn chỉnh items theo chục trính  */
+    /* justify-content: center; */
+
+    justify-content: space-evenly;
+
+    /* justify-content: end; */
+
+    /* Nếu các items quá 100% thì xuống hàng */
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 250px;
+    height: 100px;
+    background: #ccc;
+    border: 1px solid lightcoral;
+    box-sizing: border-box;
+}
+
+/* 2. Căn chỉnh các flex items theo trục chính (main axit and cross axis)*/
+
+.container_extra {
+    width: 500px;
+    border: 2px dashed brown;
+    display: flex;
+    height: 400px;
+
+    /* căn chỉnh flex items theo phương thẳng đứng */
+    align-items: flex-end;
+}
+
+.box_extra {
+    width: 100px;
+    background: #ccc;
+    border: 1px solid lightcoral;
+}
+/* Bài 5: mỗi card bằng 33% */
+/* box-sizing: border-box; */
