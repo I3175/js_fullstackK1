@@ -1,0 +1,25 @@
+h2 {
+    text-align: center;
+}
+.pixel {
+    background: cadetblue;
+    box-sizing: border-box;
+    margin-left: 380px;
+    margin-right: 380px;
+}
+strong {
+    text-align: center;
+    color: aqua;
+}
+main {
+    text-align: center;
+}
+.bt {
+    
+    background: black;
+    color: aliceblue;
+}
+footer {
+    justify-content: center;
+    align-items: center;
+}

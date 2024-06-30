@@ -1,0 +1,12 @@
+body {
+    --color-red: red;
+    --color-blue: blue;
+}
+
+.first p {
+    color: var(--color-red);
+}
+
+.second p {
+    color: var(--color-blue);   
+}

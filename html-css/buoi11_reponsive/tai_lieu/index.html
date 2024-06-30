@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive</title>
+
+        <style>
+            .wraper {
+                background: lightblue;
+            }
+            @media screen and (min-width: 576px){
+                .wraper {
+                background: lightcoral;
+                padding: 20px;
+            }
+            }
+            @media screen and (min-width: 768px){
+                .wraper {
+                background: lightgoldenrodyellow;
+                padding: 20px;
+            }
+            }
+            @media screen and (min-width: 992px){
+                .wraper {
+                background: lightpink;
+                padding: 20px;
+            }
+            }
+            @media screen and (min-width: 1200px){
+                .wraper {
+                background: lightgreen;
+                padding: 20px;
+            }
+            }
+            
+
+            /* 1. Đi từ desktop xuống mobile
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                
+            }
+            .box1 {
+                padding: 20px;
+                width: 30%;
+                background: lightcoral;
+                margin-right: 5%;
+            }
+            .box2 {
+                padding: 20px;
+                width: 60%;
+                background: lightgreen;
+                margin-right: 5%;
+            }
+
+            /* responsive */
+            /* @media screen and (max-width: 576px){
+                .container {
+                display: block;
+            }
+            .box1, .box2 {
+                width: 100%;
+            }
+            } */ 
+
+            /* 2. Đi từ mobile xuống desktop */
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                
+            }
+            .box1 {
+                padding: 20px;
+                width: 30%;
+                background: lightcoral;
+                margin-right: 5%;
+            }
+            .box2 {
+                padding: 20px;
+                width: 60%;
+                background: lightgreen;
+                margin-right: 5%;
+            }
+             /* responsive */
+            @media screen and (min-width: 576px){
+                .container {
+                display: block;
+            }
+            .box1, .box2 {
+                width: 100%;
+            }
+            }
+            .logo {
+                width: 200px;
+                border: 1px solid brown;
+            } 
+            .logo img {
+                max-width: 100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <!-- 1. Responsive nó được tạo mặc định nếu chỉ có html -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt officiis voluptas omnis atque
+             consequatur, fuga vero facere inventore! Odit repudiandae quae iusto quasi harum consequatur 
+             aliquid, cum nobis illo incidunt?
+        </p>
+        <hr/>
+        <!-- 2. Media query -->
+        <div class="wraper">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam reiciendis optio 
+            laborum facere dignissimos assumenda illo quibusdam iusto possimus, consequatur voluptas 
+            impedit temporibus! Beatae et qui ad quod fugit?
+        </div>
+        <!-- có 2 cách tiếp cận  -->
+        <!-- mobile first :  dễ tiếp cận hơn và hiển thị nhanh ở các thiết bị màn hình nhỏ-->
+        <!-- desktop: ưa chuộng hơn nhưng ít được khuyên dùng-->
+        <!-- 3. responsive với flex box -->
+        <hr/>
+        <div class="container">
+            <div class="box1">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus facere non nulla maiores! Earum perspiciatis similique tempore sapiente, blanditiis itaque.
+            </div>
+            <div class="box2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus facere non nulla maiores! Earum perspiciatis similique tempore sapiente, blanditiis itaque.  
+            </div>
+        </div>
+
+        <!-- 4. responsive cho media -->
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1682685797661-9e0c87f59c60?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,34 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: lightcoral;
+    padding: 20px;
+    position: relative;
+}
+
+.container p { 
+    padding: 20px; 
+}
+.container P:first-child {
+    background: lightblue;
+}
+.container p:nth-child(2) {
+    background: lightgoldenrodyellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 2;
+    /* position: absolute; */
+    /* 1. Khi sử dụng position: absolute; cho 1 phần tử và sau đó kiểm tra */
+    /* và sau đó không có phần tử cha nào position khác static thì nó sẽ */
+    /* lấy phần tử HTML làm chuẩn để xác định khoảng cách top,left,right,... */
+}
+.container p:last-child {
+    background: lightpink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 1;
+}

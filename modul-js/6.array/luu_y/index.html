@@ -1,0 +1,39 @@
+<!-- Bài 4: Cho một mảng có sẵn. Tìm phần tử xuất hiện nhiều nhất trong mảng và in ra chúng -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function fine(arr) {
+        const mangTanSuat = {};
+        let maxElement = arr[0];
+        let maxCount = 1;        
+        for (let i = 0; i < arr.length; i++){
+            // tạo 1 biến cố định lưu giá trị mà vòng lặp duyệt đến
+            const element = arr[i];
+            // so sánh phần tử xem đã xuât hiện chưa
+            if (mangTanSuat[element]){
+                //nếu rồi thì tăng giá trị của nó trong mảng tần xuất
+                mangTanSuat[element]++;
+                // nếu chưa thì gán nó bằng 1
+            } else {
+                mangTanSuat[element] = 1;
+                // nếu nó lớn hơn phần tử xuất hiện nhiều nhất trước đó
+                // thì thay thế
+            } if (mangTanSuat[element] > maxCount) {
+                maxElement = element;
+                maxCount = mangTanSuat[element];
+            }
+        }
+    document.write('Phần tử xuất hiện nhiều nhất trong mảng là: ',maxElement);
+    return maxElement;
+    }
+    var arr = [2, 3, 2, 5, 6, 7, 5, 5, 7, 8, 5, 5, 9];
+    fine(arr);
+    </script>
+</body>
+</html>

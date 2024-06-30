@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.search_container {
+    background-color: orangered;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    
+}
+.search_container h1 {
+    padding-top: 20px;
+    color: white;
+}
+.search_input {
+    max-width: 600px;
+    display: flex;
+    margin: 0 30px;
+    
+}
+.input {
+    width: 70%;
+}
+button {
+    width: 30%;
+}
+.list_option {
+    margin-top: 20px;
+    max-width: 600px;
+}
+.option {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0 30px;
+}
+h6 {
+    margin: 0;
+}
+p {
+    cursor: pointer;
+}

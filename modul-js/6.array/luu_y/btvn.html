@@ -1,0 +1,35 @@
+<!-- Viết chương trình khởi tạo nhập vào một mảng số nguyên gồm 10 phần tử.
+ Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+            var Arr = [];
+
+            for (var i = 0; i < 10; i++) {
+                var input = parseInt(prompt("Nhập vào số nguyên thứ " + (i + 1) + ":"));
+                Arr.push(input);
+            }
+            // so sánh số ở index trước và index sau
+            for (var i = 0; i < Arr.length - 1; i++) {
+                for (var j = i + 1; j < Arr.length; j++) {
+                    if (Arr[i] < Arr[j]) {
+                        // tạo biến lưu giá trị để hoán đổi
+                        var temp = Arr[i];
+                        Arr[i] = Arr[j];
+                        Arr[j] = temp;
+                    }
+                }
+            }
+            
+            console.log("Mảng sau khi sắp xếp giảm dần là:");
+            console.log(Arr);
+
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.images > img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
+.hide {
+    display: none;
+}
+.photo_list {
+    text-align: center;
+    margin-top: 10px;
+}
+.photo_list > img {
+    max-width: 1000px;
+    width: 24%;
+    display: inline-block;
+    height: 120px;
+    cursor: pointer;
+}
+.photo_list .active {
+    border: red 2px solid;
+}
+.slider_top {
+    position: relative;
+}
+.icon_click button:first-child {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.icon_click button {
+    cursor: pointer;
+}
+.icon_click button:last-child {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,38 @@
+<!-- # Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var str1 = prompt("Nhập vào chuỗi thứ nhất:");
+
+            var str2 = prompt("Nhập vào chuỗi thứ hai:");
+
+            if (str1.length !== str2.length) {
+                console.log("Hai chuỗi không giống nhau.");
+            } else {
+                var result = true;
+                // Kiểm tra từng ký tự của hai chuỗi
+                for (var i = 0; i < string1.length; i++) {
+                    if (str1[i] !== str2[i]) {
+                        result = false;
+                        break;
+                    }
+                }
+
+                if (result) {
+                    console.log("Hai chuỗi giống nhau.");
+                } else {
+                    console.log("Hai chuỗi không giống nhau.");
+                }
+            }
+
+    </script>
+</body>
+</html>
+

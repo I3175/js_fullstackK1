@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hàm để đảo ngược các phần tử trong mảng
+function reverseArray(arr) {
+    return arr.reverse();
+}
+
+// Hàm chính để chạy chương trình
+function main() {
+    // Nhập số lượng phần tử của mảng từ người dùng
+    var n = parseInt(prompt("Nhập số lượng phần tử của mảng: "));
+
+    // Nhập các phần tử của mảng từ người dùng
+    var arr = [];
+    for (var i = 0; i < n; i++) {
+        var element = parseInt(prompt("Nhập phần tử thứ " + (i+1) + " của mảng: "));
+        arr.push(element);
+    }
+
+    // In ra mảng ban đầu
+    console.log("Mảng ban đầu:", arr);
+
+    // Đảo ngược các phần tử trong mảng
+    var reversedArr = reverseArray(arr);
+
+    // In ra mảng đã đảo ngược
+    console.log("Mảng sau khi đảo ngược:", reversedArr);
+}
+
+// Gọi hàm chính để chạy chương trình
+main();
+
+
+    </script>
+        
+
+</body>
+</html>
