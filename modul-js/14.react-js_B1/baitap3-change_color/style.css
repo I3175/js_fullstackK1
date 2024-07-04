@@ -1,0 +1,35 @@
+body {
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box_wrapper {
+    display: flex;
+    justify-content: center;
+    border: 1px dashed brown;
+    padding: 30px;
+}
+
+.box_wrapper .box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid brown;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.box1 {
+    background-color: lightgray;
+}
+
+.box2 {
+    background-color: lightgreen;
+}
+
+.box3 {
+    background-color: lightsalmon;
+}

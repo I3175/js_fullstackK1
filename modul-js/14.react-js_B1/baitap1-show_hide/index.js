@@ -32,7 +32,6 @@ function Change() {
             <div class="result">
                 <p class={change}>This is text</p>
             </div>
-
                 <button onClick={handleHideText}>Hide Text</button>
                 <button onClick={handleShowText}>Show Text</button>
                 <button onClick={handleToggleText}>Toggle Text</button>
