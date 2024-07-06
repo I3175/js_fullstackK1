@@ -54,3 +54,18 @@ img {
     left: 0;
     transform: translateY(-50%);
 }
+.next {
+    border: none;
+    outline: none;
+    background: none; 
+    color: white;
+    font-size: 30px;
+}
+
+.previous {
+    border: none;
+    outline: none;
+    background: none; 
+    color: white;
+    font-size: 30px;
+}

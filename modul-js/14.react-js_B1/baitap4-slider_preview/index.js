@@ -7,6 +7,9 @@ function Slider() {
 
     let hide = 'hide';
 
+    // render img
+
+
     const handleNextButton = function () {
         slider + 1;
         setSlider(slider);
@@ -19,7 +22,7 @@ function Slider() {
     <div class="content">
         <div class="slider_top">
              <div class="images" id="imgs">
-                <img src="img/1.jpg" alt="" class={`${hide} ${slider}`}/>
+                <img src="img/1.jpg" alt="" class={hide}/>
                 <img src="img/2.jpg" alt="" class={hide}/>
                 <img src="img/3.jpg" alt="" class={hide}/>
                 <img src="img/4.jpg" alt="" class={hide}/>
