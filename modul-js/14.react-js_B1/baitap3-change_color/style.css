@@ -22,14 +22,14 @@ body {
     cursor: pointer;
 }
 
-.box1 {
+.box_wrapper .box:first-child {
     background-color: lightgray;
 }
 
-.box2 {
+.box_wrapper .box:nth-child(2) {
     background-color: lightgreen;
 }
 
-.box3 {
+.box_wrapper .box:last-child {
     background-color: lightsalmon;
 }

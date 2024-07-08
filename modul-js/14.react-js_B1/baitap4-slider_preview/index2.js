@@ -43,8 +43,12 @@ function Slider() {
                     return (
                             <img
                                 key={index}
-                                src={`img/${image}`}
-                                className={slider === index ? '' : 'hide'}
+                                src={
+                                    `img/${image}`
+                                }
+                                className={
+                                    slider === index ? '' : 'hide'
+                                }
                             />
                         );
                     })}
@@ -61,8 +65,11 @@ function Slider() {
                 return    (
                         <button 
                             key={index} 
-                            className={slider === index ? 'active' : ''}
-                            onClick={function handleDotsButton() {
+                            className={
+                                slider === index ? 'active' : ''
+                            }
+                            onClick= {
+                                function handleDotsButton() {
                                 setSlider(index);
                             }}
                             >
