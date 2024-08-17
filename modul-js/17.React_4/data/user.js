@@ -1,7 +1,9 @@
 const users = [
     {
         id: crypto.randomUUID(),
-        name: 'Doan'
+        name: 'Doan',
+        // tuổi
+        // giới tính
     },
     {
         id: crypto.randomUUID(),
@@ -11,6 +13,9 @@ const users = [
         id: crypto.randomUUID(),
         name: 'Dieu'
     }
+    // 2. thêm ô input lọc dữ liệu user
+// 3. thêm select để sort dữ liệu theo name
+// asr và dsc
 ];
 
 export default users;
